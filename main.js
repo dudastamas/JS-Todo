@@ -55,7 +55,7 @@ function renderItems() {
   items.length === 0
     ? (list.innerHTML = `<h4 class="text-center text-white">Még nem adtál meg tennivalót!</h4>`)
     : (list.innerHTML = items.map(
-        (item) => `  <ol class="list-group w-80" id="ol-list"><li
+        (item) => `  <ol class="list-group w-80" id="ol-list"><li key=${item.id}
                   class="list-group-item py-4 border rounded-5 border-success d-flex flex-column bg-dark text-white justify-content-between align-items-center"
                 >
                   <div class="ms-2 me-auto">
